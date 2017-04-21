@@ -19,5 +19,6 @@ using namespace std;
 // Stub for main
 int main(){
    /* --STATEMENTS-- */
+	std::cout << "Welcome to Siete Y Medio!" << std::endl;
    return 0;
 }
