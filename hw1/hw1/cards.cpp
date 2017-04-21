@@ -197,14 +197,15 @@ bool Card::operator < (Card card2) const
 
 //	Addition operator for cards
 //	Returns the new value of the cards should the player hit
-Card& Card::operator+=(const Card& two)
-{
-	//Card temp = *this;
-	int r = get_rank();
-	r = get_rank() + two.get_rank();
-	//*this = temp;
-	return *this;
-}
+
+//Card& Card::operator+=(const Card& two)
+//{
+//	//Card temp = *this;
+//	int r = get_rank();
+//	r = get_rank() + two.get_rank();
+//	//*this = temp;
+//	return *this;
+//}
 
 
 
@@ -217,6 +218,15 @@ Hand::Hand() : player_total(0.0) { };
 
 Hand::Hand(double hand_total) : player_total(hand_total) { };
 
+Hand& Hand::operator+=(const Card& two)
+{
+	player_total = player_total + two.get_rank();
+	return *this;
+}
+int Hand::get_hand_total()
+{
+	return player_total;
+}
 /* *************************************************
 Player class
 ************************************************* */

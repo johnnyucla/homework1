@@ -52,7 +52,7 @@ public:
 	// Assume Ace is always 1. 
 	// Useful if you want to sort the cards.
 	bool operator < (Card card2) const;
-	Card& operator+=(const Card& two);
+	//Card& operator+=(const Card& two);
 
 private:
 	suit_t suit;
@@ -62,6 +62,7 @@ private:
 
 class Hand
 {
+	friend class Card;
 public:
 	// A vector of Cards
 	Hand();
@@ -72,6 +73,8 @@ public:
 	}
 
 	// You decide what functions you'll need...
+	Hand& operator+=(const Card& two);
+	int get_hand_total();
 
 private:
 	double player_total;
