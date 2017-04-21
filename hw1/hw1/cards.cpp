@@ -214,19 +214,25 @@ Hand class
 ************************************************* */
 // Implemente the member functions of the Hand class here.
 
-Hand::Hand() : player_total(0.0) { };
-
-Hand::Hand(double hand_total) : player_total(hand_total) { };
-
-Hand& Hand::operator+=(const Card& two)
+Hand::Hand()
 {
-	player_total = player_total + two.get_rank();
-	return *this;
+	hand;
 }
-int Hand::get_hand_total()
-{
-	return player_total;
-}
+
+//Hand::Hand(double hand_total) : player_total(hand_total) { };
+
+//Hand& Hand::operator+=(const Card& two)
+//{
+//	player_total = player_total + two.get_rank();
+//	return *this;
+//}
+
+//int Hand::get_hand_total()
+//{
+//	return player_total;
+//}
+
+
 /* *************************************************
 Player class
 ************************************************* */

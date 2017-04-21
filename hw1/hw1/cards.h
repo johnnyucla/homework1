@@ -66,19 +66,30 @@ class Hand
 public:
 	// A vector of Cards
 	Hand();
-	Hand(double hand_total);
-	Hand(Card c)
+	//Hand(double hand_total);
+	bool addCard(Card c)
 	{
-		total.push_back(c.get_rank());
+		hand.push_back(c);
+		return true;
 	}
 
 	// You decide what functions you'll need...
-	Hand& operator+=(const Card& two);
-	int get_hand_total();
+
+	//Hand& operator+=(const Card& two);
+
+	int tally_hand_total()
+	{
+		int total = 0;
+		for (int i = 0; i < hand.size(); ++i)
+		{
+			total += hand[i].get_rank();
+		}
+		return total;
+	}
 
 private:
-	double player_total;
-	std::vector<double> total;
+	//double player_total;
+	std::vector<Card> hand;
 	// You decide what fields you'll need...
 };
 
