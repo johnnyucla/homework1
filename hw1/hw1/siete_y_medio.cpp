@@ -31,5 +31,29 @@ int main(){
 	a.addCard(Card());
 	//int x = a.tally_hand_total();
 	std::cout << a.tally_hand_total() << std::endl;
+	a.addCard(Card());
+	//int x = a.tally_hand_total();
+	std::cout << a.tally_hand_total() << std::endl;
+	a.addCard(Card());
+	//int x = a.tally_hand_total();
+	std::cout << a.tally_hand_total() << std::endl;
+	std::cout << "B card now" << std::endl;
+	Hand b;
+	b.addCard(Card());
+	std::cout << b.tally_hand_total() << std::endl;
+	//int x = a.tally_hand_total();
+	b.addCard(Card());
+	//int x = a.tally_hand_total();
+	std::cout << b.tally_hand_total() << std::endl;
+	b.addCard(Card());
+	//int x = a.tally_hand_total();
+	std::cout << b.tally_hand_total() << std::endl;
+	b.addCard(Card());
+	//int x = a.tally_hand_total();
+	std::cout << b.tally_hand_total() << std::endl;
+	b.addCard(Card());
+	//int x = a.tally_hand_total();
+	std::cout << b.tally_hand_total() << std::endl;
+
    return 0;
 }
