@@ -31,3 +31,11 @@ This is called house advantage.
 Both the player and the dealer have the same total and  they do not bust.
 
 In this case a tie is declared and no money is exchanged.
+
+
+Cards in 'siete y medio'
+Name:	   As   	  Dos  	  Tres  	 Cuatro 	 Cinco 	  Seis  	 Siete 	  Sota  	Caballo	  Rey  
+
+Rank:	    1	       2	      3	        4	        5	      6	        7	        10	    11    12
+
+Value: 	  1	       2	      3	        4	        5	      6	         7	      1/2	    1/2	  1/2
