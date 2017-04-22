@@ -54,16 +54,16 @@ string Card::get_spanish_suit() const
 	switch (suit)
 	{
 	case OROS:
-		suitName = "oros";
+		suitName = " de oros";
 		break;
 	case COPAS:
-		suitName = "copas";
+		suitName = " de copas";
 		break;
 	case ESPADAS:
-		suitName = "espadas";
+		suitName = " de espadas";
 		break;
 	case BASTOS:
-		suitName = "bastos";
+		suitName = " de bastos";
 		break;
 	default: break;
 	}
@@ -121,16 +121,16 @@ string Card::get_english_suit() const
 	switch (suit)
 	{
 	case OROS:
-		suitName = "oros";
+		suitName = " of Diamonds";
 		break;
 	case COPAS:
-		suitName = "copas";
+		suitName = " of Hearts";
 		break;
 	case ESPADAS:
 		suitName = " of Spades";
 		break;
 	case BASTOS:
-		suitName = "bastos";
+		suitName = " of Clubs";
 		break;
 	default: break;
 	}
@@ -217,6 +217,23 @@ Hand class
 Hand::Hand()
 {
 	hand;
+}
+
+bool Hand::addCard(Card c)
+{
+	std::cout << c.get_spanish_rank() << c.get_spanish_suit() << "\t" << "(" << c.get_english_rank() << c.get_english_suit() << ")" << std::endl;;
+	hand.push_back(c);
+	return true;
+}
+
+int Hand::tally_hand_total()
+{
+	int total = 0;
+	for (int i = 0; i < hand.size(); ++i)
+	{
+		total += hand[i].get_rank();
+	}
+	return total;
 }
 
 //Hand::Hand(double hand_total) : player_total(hand_total) { };

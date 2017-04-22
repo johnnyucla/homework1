@@ -67,25 +67,13 @@ public:
 	// A vector of Cards
 	Hand();
 	//Hand(double hand_total);
-	bool addCard(Card c)
-	{
-		hand.push_back(c);
-		return true;
-	}
+	bool addCard(Card c);
 
 	// You decide what functions you'll need...
 
 	//Hand& operator+=(const Card& two);
 
-	int tally_hand_total()
-	{
-		int total = 0;
-		for (int i = 0; i < hand.size(); ++i)
-		{
-			total += hand[i].get_rank();
-		}
-		return total;
-	}
+	int tally_hand_total();
 
 private:
 	//double player_total;
