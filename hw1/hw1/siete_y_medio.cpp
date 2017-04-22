@@ -19,41 +19,43 @@ using namespace std;
 // Stub for main
 int main(){
    /* --STATEMENTS-- */
-	srand((time(0)));
-	std::cout << "Welcome to Siete Y Medio!" << std::endl;
-	Hand a;
-	a.addCard(Card());
-	std::cout << a.tally_hand_total() << std::endl;
-	//int x = a.tally_hand_total();
-	a.addCard(Card());
-	//int x = a.tally_hand_total();
-	std::cout << a.tally_hand_total() << std::endl;
-	a.addCard(Card());
-	//int x = a.tally_hand_total();
-	std::cout << a.tally_hand_total() << std::endl;
-	a.addCard(Card());
-	//int x = a.tally_hand_total();
-	std::cout << a.tally_hand_total() << std::endl;
-	a.addCard(Card());
-	//int x = a.tally_hand_total();
-	std::cout << a.tally_hand_total() << std::endl;
-	std::cout << "B card now" << std::endl;
-	Hand b;
-	b.addCard(Card());
-	std::cout << b.tally_hand_total() << std::endl;
-	//int x = a.tally_hand_total();
-	b.addCard(Card());
-	//int x = a.tally_hand_total();
-	std::cout << b.tally_hand_total() << std::endl;
-	b.addCard(Card());
-	//int x = a.tally_hand_total();
-	std::cout << b.tally_hand_total() << std::endl;
-	b.addCard(Card());
-	//int x = a.tally_hand_total();
-	std::cout << b.tally_hand_total() << std::endl;
-	b.addCard(Card());
-	//int x = a.tally_hand_total();
-	std::cout << b.tally_hand_total() << std::endl;
+	//srand((time(0)));
+	//std::cout << "Welcome to Siete Y Medio!" << std::endl;
+	//Hand a;
+	//a.addCard(Card());
+	//std::cout << a.tally_hand_total() << std::endl;
+	////int x = a.tally_hand_total();
+	//a.addCard(Card());
+	////int x = a.tally_hand_total();
+	//std::cout << a.tally_hand_total() << std::endl;
+	//a.addCard(Card());
+	////int x = a.tally_hand_total();
+	//std::cout << a.tally_hand_total() << std::endl;
+	//a.addCard(Card());
+	////int x = a.tally_hand_total();
+	//std::cout << a.tally_hand_total() << std::endl;
+	//a.addCard(Card());
+	////int x = a.tally_hand_total();
+	//std::cout << a.tally_hand_total() << std::endl;
+	//std::cout << "B card now" << std::endl;
+	//Hand b;
+	//b.addCard(Card());
+	//std::cout << b.tally_hand_total() << std::endl;
+	////int x = a.tally_hand_total();
+	//b.addCard(Card());
+	////int x = a.tally_hand_total();
+	//std::cout << b.tally_hand_total() << std::endl;
+	//b.addCard(Card());
+	////int x = a.tally_hand_total();
+	//std::cout << b.tally_hand_total() << std::endl;
+	//b.addCard(Card());
+	////int x = a.tally_hand_total();
+	//std::cout << b.tally_hand_total() << std::endl;
+	//b.addCard(Card());
+	////int x = a.tally_hand_total();
+	//std::cout << b.tally_hand_total() << std::endl;
+
+
 
    return 0;
 }

@@ -121,16 +121,16 @@ string Card::get_english_suit() const
 	switch (suit)
 	{
 	case OROS:
-		suitName = "oros";
+		suitName = " of Diamonds";
 		break;
 	case COPAS:
-		suitName = "copas";
+		suitName = "of Hearts";
 		break;
 	case ESPADAS:
 		suitName = " of Spades";
 		break;
 	case BASTOS:
-		suitName = "bastos";
+		suitName = " of Clubs";
 		break;
 	default: break;
 	}
