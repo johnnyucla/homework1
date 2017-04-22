@@ -19,6 +19,7 @@ using namespace std;
 // Stub for main
 int main(){
    /* --STATEMENTS-- */
+	srand((time(0)));
 	std::cout << "Welcome to Siete Y Medio!" << std::endl;
 	Hand a;
 	a.addCard(Card());
