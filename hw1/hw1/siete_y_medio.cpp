@@ -20,5 +20,15 @@ using namespace std;
 int main(){
    /* --STATEMENTS-- */
 	std::cout << "Welcome to Siete Y Medio!" << std::endl;
+	Hand a;
+	a.addCard(Card());
+	std::cout << a.tally_hand_total() << std::endl;
+	//int x = a.tally_hand_total();
+	a.addCard(Card());
+	//int x = a.tally_hand_total();
+	std::cout << a.tally_hand_total() << std::endl;
+	a.addCard(Card());
+	//int x = a.tally_hand_total();
+	std::cout << a.tally_hand_total() << std::endl;
    return 0;
 }
